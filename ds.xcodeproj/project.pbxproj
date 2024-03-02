@@ -6,10 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4AACF6E52B5C286300C02BCD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AACF6E42B5C286300C02BCD /* main.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		4AACF6DF2B5C286300C02BCD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,8 +19,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A1F68DF2B5C295500D9E38B /* Calculator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Calculator; sourceTree = "<group>"; };
+		4A1F68E02B5C295500D9E38B /* LinkedListStack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LinkedListStack; sourceTree = "<group>"; };
+		4A1F68E12B5C295500D9E38B /* ArrayStack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ArrayStack; sourceTree = "<group>"; };
+		4A45420A2B76469500DF8CCD /* CircularQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularQueue.h; sourceTree = "<group>"; };
+		4A45420B2B76491C00DF8CCD /* CircularQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CircularQueue.c; sourceTree = "<group>"; };
+		4A45420C2B76601E00DF8CCD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4AACF6E12B5C286300C02BCD /* ds */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ds; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AACF6E42B5C286300C02BCD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,10 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4542092B7642F900DF8CCD /* CircularQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4A45420C2B76601E00DF8CCD /* main.c */,
+				4A45420A2B76469500DF8CCD /* CircularQueue.h */,
+				4A45420B2B76491C00DF8CCD /* CircularQueue.c */,
+			);
+			path = CircularQueue;
+			sourceTree = "<group>";
+		};
 		4AACF6D82B5C286300C02BCD = {
 			isa = PBXGroup;
 			children = (
-				4AACF6E32B5C286300C02BCD /* ds */,
+				4A4542092B7642F900DF8CCD /* CircularQueue */,
+				4A1F68E12B5C295500D9E38B /* ArrayStack */,
+				4A1F68DF2B5C295500D9E38B /* Calculator */,
+				4A1F68E02B5C295500D9E38B /* LinkedListStack */,
 				4AACF6E22B5C286300C02BCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +66,6 @@
 				4AACF6E12B5C286300C02BCD /* ds */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4AACF6E32B5C286300C02BCD /* ds */ = {
-			isa = PBXGroup;
-			children = (
-				4AACF6E42B5C286300C02BCD /* main.c */,
-			);
-			path = ds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +125,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AACF6E52B5C286300C02BCD /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
